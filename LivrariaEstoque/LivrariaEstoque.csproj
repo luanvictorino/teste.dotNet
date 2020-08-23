@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>bin\LivrariaEstoque.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200820221125_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820221125_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820232226_LivrariaDB.cs" />
+    <Compile Remove="Migrations\20200820232226_LivrariaDB.Designer.cs" />
+    <Compile Remove="Migrations\20200820232450_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820232450_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820232611_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820232611_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820232702_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820232702_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820233554_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820233554_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820233718_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820233718_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820234025_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820234025_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820234448_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820234448_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200820234514_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200820234514_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200821004146_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200821004146_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200821005446_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200821005446_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200821005659_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200821005659_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200821010125_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200821010125_MigracaoInicial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\Error.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="5.5.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+
+<div class="img-thumbnail" align="center">
+    <img src="https://440245-1378968-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/09/o-que-faz-um-bibliotecario-tricurioso02.jpg" 
+         class="img-thumbnail" alt="" width="600" height="300" />
+</div>
+
+<h2>Livros recentes</h2>
+
+<div class="row">
+    @foreach (var livro in Model.LivrosRecentes)
+    {
+        <partial name="_LivrosResumo" for="@livro" />
+    }
+</div>

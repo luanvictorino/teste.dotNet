@@ -1,0 +1,8 @@
+﻿@model LivroListViewModel
+
+<div><h2>@Model.Genero</h2></div>
+
+@foreach (var livro in Model.Livros)
+{
+    <partial name="_LivrosResumo" for="@livro"/>
+}

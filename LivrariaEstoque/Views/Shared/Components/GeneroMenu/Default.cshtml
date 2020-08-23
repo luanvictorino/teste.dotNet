@@ -1,0 +1,19 @@
+﻿<li class="dropdown">
+    <a asp-controller="Livro" asp-action="List"
+       class="dropdown-toggle"data-toggle="dropdown">
+        Livros em Estoque<b class="text-dark"></b>
+    </a>
+    <ul class="dropdown-menu">
+        @foreach (var genero in Model)
+        {
+            <li>
+                <a asp-controller="Livro" asp-action="List"
+                   asp-route-genero="@genero.GeneroNome">@genero.GeneroNome</a>
+            </li>
+        }
+        <li class="dropdown-divider"></li>
+        <li>
+            <a asp-controller="Livro" asp-action="List" asp-route-genero="">Ver todos os livros</a>
+        </li>
+    </ul>
+</li>
